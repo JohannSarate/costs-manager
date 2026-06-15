@@ -9,12 +9,6 @@
 
 ---
 
-| Editar Projeto | Adicionar Serviços |
-|---|---|
-| ![Edit](https://private-user-images.githubusercontent.com/50882638/317858924-72abcaa5-6881-4833-9ee7-46bfc4fec7cc.png) | ![Services](https://private-user-images.githubusercontent.com/50882638/317858923-d26a0f17-cb3b-41b0-8737-3f8d174bd006.png) |
-
----
-
 ## ✨ Funcionalidades
 
 - ✅ Criar novos projetos com nome, orçamento e categoria
