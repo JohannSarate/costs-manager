@@ -1,16 +1,119 @@
+# 📁 Costs Manager
 
+> Aplicação web para criação e gestão de projetos e serviços, com interface intuitiva e persistência de dados via json-server.
 
-<h1>This project is built with React and allows users to create, manage, and edit projects seamlessly. Users can add new services, modify existing ones, and delete both services and projects as needed. The application uses json-server to simulate a backend, providing a mock database for storing and retrieving project data. The goal of the project is to offer an intuitive interface for managing projects and their associated services, providing a dynamic, user-friendly experience.</h1>
-<div class="main">
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JSON Server](https://img.shields.io/badge/json--server-000?style=flat&logo=json&logoColor=white)
 
-![Create_project](https://github.com/JohannSarate/Project/assets/50882638/9797c064-c602-420d-82af-da5edaa6dbc9)
+---
 
-![ours_projects](https://github.com/JohannSarate/Project/assets/50882638/1f585d3e-7d4f-4990-9c74-be302ceed6d3)
+## 📸 Screenshots
 
-![Edit](https://github.com/JohannSarate/Project/assets/50882638/72abcaa5-6881-4833-9ee7-46bfc4fec7cc)
+| Criar Projeto | Os Meus Projetos |
+|---|---|
+| ![Create](https://private-user-images.githubusercontent.com/50882638/317858928-9797c064-c602-420d-82af-da5edaa6dbc9.png) | ![Projects](https://private-user-images.githubusercontent.com/50882638/317858930-1f585d3e-7d4f-4990-9c74-be302ceed6d3.png) |
 
-![Add_services](https://github.com/JohannSarate/Project/assets/50882638/d26a0f17-cb3b-41b0-8737-3f8d174bd006)
+| Editar Projeto | Adicionar Serviços |
+|---|---|
+| ![Edit](https://private-user-images.githubusercontent.com/50882638/317858924-72abcaa5-6881-4833-9ee7-46bfc4fec7cc.png) | ![Services](https://private-user-images.githubusercontent.com/50882638/317858923-d26a0f17-cb3b-41b0-8737-3f8d174bd006.png) |
 
-![Check_services](https://github.com/JohannSarate/Project/assets/50882638/d227d784-ab64-47a4-8edc-4a69072815e2)
+---
 
+## ✨ Funcionalidades
+
+- ✅ Criar novos projetos com nome, orçamento e categoria
+- ✅ Listar todos os projetos existentes
+- ✅ Editar projetos — nome, orçamento e detalhes
+- ✅ Adicionar e remover serviços dentro de cada projeto
+- ✅ Eliminar projetos
+- ✅ Controlo de orçamento em tempo real (orçamento usado vs. disponível)
+- ✅ Backend simulado com json-server
+
+---
+
+## 🛠️ Tecnologias
+
+| Tecnologia | Uso |
+|---|---|
+| React | Interface e gestão de estado |
+| React Router DOM | Navegação entre páginas |
+| JavaScript (ES6+) | Lógica da aplicação |
+| CSS3 | Estilos e layout responsivo |
+| json-server | API REST simulada / mock database |
+
+---
+
+## 🚀 Como Correr Localmente
+
+### Pré-requisitos
+- Node.js instalado
+- npm ou yarn
+
+### Instalação
+
+```bash
+# 1. Clonar o repositório
+git clone https://github.com/JohannSarate/Project.git
+
+# 2. Entrar na pasta
+cd Project
+
+# 3. Instalar dependências
+npm install
+```
+
+### Iniciar a aplicação
+
+Precisas de dois terminais em simultâneo:
+
+```bash
+# Terminal 1 — Backend (json-server)
+npm run backend
+
+# Terminal 2 — Frontend (React)
+npm start
+```
+
+A aplicação estará disponível em `http://localhost:3000` e o backend em `http://localhost:5000`.
+
+---
+
+## 📂 Estrutura do Projeto
+
+```
+Project/
+├── public/
+├── src/
+│   ├── components/       # Componentes reutilizáveis (Navbar, Button, Input...)
+│   ├── pages/            # Páginas (Home, NewProject, ProjectDetails...)
+│   ├── App.js
+│   └── index.js
+├── costs/
+│   └── db.json           # Base de dados simulada (json-server)
+├── package.json
+└── README.md
+```
+
+---
+
+## 📌 Roadmap
+
+- [ ] Autenticação de utilizadores
+- [ ] Filtros e pesquisa de projetos
+- [ ] Gráficos de orçamento
+- [ ] Substituir json-server por backend real (Node.js + Express)
+- [ ] Deploy na Vercel / Railway
+
+---
+
+## 📄 Licença
+
+Este projeto é de uso livre para fins de estudo e aprendizagem.
+
+---
+
+<div align="center">
+  Feito por <a href="https://github.com/JohannSarate">Johann Sarate</a>
 </div>
