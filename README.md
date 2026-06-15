@@ -9,12 +9,6 @@
 
 ---
 
-## 📸 Screenshots
-
-| Criar Projeto | Os Meus Projetos |
-|---|---|
-| ![Create](https://private-user-images.githubusercontent.com/50882638/317858928-9797c064-c602-420d-82af-da5edaa6dbc9.png) | ![Projects](https://private-user-images.githubusercontent.com/50882638/317858930-1f585d3e-7d4f-4990-9c74-be302ceed6d3.png) |
-
 | Editar Projeto | Adicionar Serviços |
 |---|---|
 | ![Edit](https://private-user-images.githubusercontent.com/50882638/317858924-72abcaa5-6881-4833-9ee7-46bfc4fec7cc.png) | ![Services](https://private-user-images.githubusercontent.com/50882638/317858923-d26a0f17-cb3b-41b0-8737-3f8d174bd006.png) |
