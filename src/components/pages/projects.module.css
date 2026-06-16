@@ -1,0 +1,44 @@
+.project_container {
+  padding: 2.5em 1.25em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tittle_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.tittle_container h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.75em;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.cards_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25em;
+  width: 100%;
+}
+
+@media (max-width: 1100px) {
+  .cards_grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 em vez de 3 */
+  }
+}
+
+@media (max-width: 768px) {
+  .cards_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .cards_grid {
+    grid-template-columns: 1fr;
+  }
+}

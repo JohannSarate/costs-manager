@@ -1,0 +1,17 @@
+.form_container {
+  background: var(--surface-2);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 1.5em;
+  margin-top: 1em;
+}
+
+.form_container h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 1em;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

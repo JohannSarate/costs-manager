@@ -1,0 +1,74 @@
+.navbar {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2em;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  text-decoration: none;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.list li a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.5em 0.9em;
+  border-radius: var(--radius-sm);
+  transition: all 0.15s ease;
+  display: block;
+}
+
+.list li a:hover,
+.list li a.active {
+  color: var(--accent);
+  background: var(--accent-light);
+}
+
+.cta_btn {
+  background: var(--accent);
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 0.55em 1.1em;
+  border-radius: var(--radius-sm);
+  transition: background 0.15s;
+}
+
+.cta_btn:hover {
+  background: var(--accent-hover);
+}
+
+.active {
+  color: var(--accent) !important;
+  background: var(--accent-light) !important;
+}

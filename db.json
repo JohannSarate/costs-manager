@@ -1,0 +1,103 @@
+{
+  "projects": [
+    {
+      "id": "7ca5",
+      "name": "First Project",
+      "budget": "4000",
+      "category": {
+        "id": "1",
+        "name": "Infrastructure"
+      },
+      "cost": 747,
+      "services": [
+        {
+          "name": "Scrum",
+          "cost": "249",
+          "description": "Scrum test",
+          "id": "e5ba9190-4c2b-42b8-819d-b31ff3c7b39b"
+        },
+        {
+          "name": "Dev",
+          "cost": "498",
+          "description": "Service",
+          "id": "725892b1-b985-454b-b27d-36c5211d821c"
+        }
+      ]
+    },
+    {
+      "id": "1d26",
+      "name": "Johann Sarate",
+      "budget": "50000000000",
+      "category": {
+        "id": "2",
+        "name": "Development"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "3835",
+      "name": "Zapassist",
+      "budget": "1500",
+      "category": {
+        "id": "2",
+        "name": "Development"
+      },
+      "cost": 850,
+      "services": [
+        {
+          "name": "Dev",
+          "cost": "650",
+          "description": "Service",
+          "id": "4afbe048-8e16-419e-a7b2-746dc41b595e"
+        },
+        {
+          "name": "Marketing ",
+          "cost": "200",
+          "description": "marketing",
+          "id": "99b9d616-7d83-4e1e-88e4-b4f5c6c91f39"
+        }
+      ]
+    },
+    {
+      "id": "9165",
+      "name": "Game",
+      "budget": "10000",
+      "category": {
+        "id": "2",
+        "name": "Development"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "2998",
+      "name": "Dashboard",
+      "budget": "250",
+      "category": {
+        "id": "2",
+        "name": "Development"
+      },
+      "cost": 0,
+      "services": []
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Infrastructure"
+    },
+    {
+      "id": "2",
+      "name": "Development"
+    },
+    {
+      "id": "3",
+      "name": "Planning"
+    },
+    {
+      "id": "4",
+      "name": "Design"
+    }
+  ]
+}

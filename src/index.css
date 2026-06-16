@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  --bg: #f7f8fc;
+  --surface: #ffffff;
+  --surface-2: #f1f4f9;
+  --border: #e4e8f0;
+  --text-primary: #0e1726;
+  --text-secondary: #5a6a85;
+  --text-muted: #9aaabb;
+  --accent: #3b6ef8;
+  --accent-hover: #2a5ce6;
+  --accent-light: #eef2ff;
+  --danger: #e53e3e;
+  --danger-light: #fff5f5;
+  --success: #16a34a;
+  --success-light: #f0fdf4;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow-sm: 0 1px 4px rgba(0,0,0,0.06);
+  --shadow: 0 4px 16px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 36px rgba(0,0,0,0.12);
+}
+
+* { padding: 0; margin: 0; box-sizing: border-box; }
+
+html, body, #root {
+  background-color: var(--bg);
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}

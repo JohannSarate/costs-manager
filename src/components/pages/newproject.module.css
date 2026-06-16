@@ -1,0 +1,23 @@
+.newproject_container {
+  max-width: 480px;
+  margin: 3em auto;
+  padding: 2.5em;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.newproject_container h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+  color: var(--text-primary);
+}
+
+.newproject_container p {
+  color: var(--text-secondary);
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+}

@@ -1,0 +1,97 @@
+.project_card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5em;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-break: break-word;
+  min-height: 200px; /* aumenta a altura mínima */
+  padding: 2em; /* aumenta o padding interno */
+}
+.project_card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+
+.project_card h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1em;
+  padding-bottom: 0.75em;
+  border-bottom: 1px solid var(--border);
+}
+
+.project_card p {
+  color: var(--text-secondary);
+  margin-bottom: 0.6em;
+  font-size: 0.9em;
+}
+
+.project_card p span {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.category_text {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.category_text span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--border);
+  flex-shrink: 0;
+}
+
+.category_text .infrastructure { background-color: #f472b6; }
+.category_text .development    { background-color: #34d399; }
+.category_text .design         { background-color: #60a5fa; }
+.category_text .planning       { background-color: #fb923c; }
+
+.project_card_actions {
+  margin-top: auto;
+  padding-top: 1.2em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.project_card_actions a,
+.project_card_actions button {
+  text-decoration: none;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-secondary);
+  font-size: 0.8em;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  padding: 0.5em 0.9em;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  transition: all 0.15s ease;
+}
+
+.project_card_actions a:hover {
+  background: var(--accent-light);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.project_card_actions button:hover {
+  background: var(--danger-light);
+  color: var(--danger);
+  border-color: var(--danger);
+}

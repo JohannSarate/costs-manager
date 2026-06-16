@@ -1,0 +1,74 @@
+.project_details {
+  padding: 2.5em 2em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project_details h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.75em;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25em;
+  padding: 0;
+  background: none;
+}
+
+.project_details h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.15em;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5em;
+}
+
+.project_details p {
+  color: var(--text-secondary);
+  margin-bottom: 0.5em;
+  font-size: 0.95em;
+}
+
+.project_details span {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.details_container,
+.service_form_container {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75em;
+  margin-bottom: 1.5em;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.btn {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.55em 1.1em;
+  border-radius: var(--radius-sm);
+  font-size: 0.875em;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.15s;
+  text-decoration: none;
+  cursor: pointer;
+  max-height: 40px;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn:hover {
+  background: var(--accent-hover);
+  color: #fff;
+}
+
+.project_info {
+  width: 100%;
+}

@@ -1,0 +1,20 @@
+.btn {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.7em 1.4em;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9em;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.15s ease;
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.btn:hover {
+  background: var(--accent-hover);
+}

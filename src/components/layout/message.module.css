@@ -1,0 +1,22 @@
+.message {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  padding: 0.9em 1.2em;
+  border-radius: var(--radius-sm);
+  font-size: 0.9em;
+  font-weight: 500;
+  margin: 1em 0;
+}
+
+.success {
+  background: var(--success-light);
+  color: var(--success);
+  border: 1px solid #bbf7d0;
+}
+
+.error {
+  background: var(--danger-light);
+  color: var(--danger);
+  border: 1px solid #fecaca;
+}
