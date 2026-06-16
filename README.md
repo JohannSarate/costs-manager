@@ -1,107 +1,123 @@
-# 📁 Costs Manager
+# 💰 Costs Manager
 
-> Aplicação web para criação e gestão de projetos e serviços, com interface intuitiva e persistência de dados via json-server.
-
-![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![JSON Server](https://img.shields.io/badge/json--server-000?style=flat&logo=json&logoColor=white)
+> A web application for project management and service cost tracking.
 
 ---
 
-## ✨ Funcionalidades
+## 📋 About
 
-- ✅ Criar novos projetos com nome, orçamento e categoria
-- ✅ Listar todos os projetos existentes
-- ✅ Editar projetos — nome, orçamento e detalhes
-- ✅ Adicionar e remover serviços dentro de cada projeto
-- ✅ Eliminar projetos
-- ✅ Controlo de orçamento em tempo real (orçamento usado vs. disponível)
-- ✅ Backend simulado com json-server
+**Costs Manager** is a React application that lets you create and manage projects with a defined budget, add services to each project, and track in real time how much of the budget has been used.
+
+Perfect for freelancers, teams, or anyone who needs to organize expenses by project in a simple and visual way.
 
 ---
 
-## 🛠️ Tecnologias
+## ✨ Features
 
-| Tecnologia | Uso |
+- ✅ **Create projects** with name, budget and category
+- ✅ **Edit and delete** existing projects
+- ✅ **Add services** to each project with name, cost and description
+- ✅ **Budget tracking** — monitor value used vs. total available
+- ✅ **Color-coded categories** — Infrastructure, Development, Design and Planning
+- ✅ **Visual feedback** — success messages after every action
+- ✅ **Loading state** during API requests
+- ✅ **Responsive layout** — 4 cards per row on desktop, adapts to smaller screens
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Description |
 |---|---|
-| React | Interface e gestão de estado |
-| React Router DOM | Navegação entre páginas |
-| JavaScript (ES6+) | Lógica da aplicação |
-| CSS3 | Estilos e layout responsivo |
-| json-server | API REST simulada / mock database |
+| [React 18](https://reactjs.org/) | Main UI library |
+| [React Router DOM v6](https://reactrouter.com/) | Client-side routing |
+| [CSS Modules](https://github.com/css-modules/css-modules) | Scoped component styling |
+| [JSON Server](https://github.com/typicode/json-server) | Fake REST API for development |
+| [React Icons](https://react-icons.github.io/react-icons/) | Edit and delete icons |
+| [UUID](https://www.npmjs.com/package/uuid) | Unique ID generation for services |
 
 ---
 
-## 🚀 Como Correr Localmente
+## 📁 Project Structure
 
-### Pré-requisitos
-- Node.js instalado
-- npm ou yarn
-
-### Instalação
-
-```bash
-# 1. Clonar o repositório
-git clone https://github.com/JohannSarate/Project.git
-
-# 2. Entrar na pasta
-cd Project
-
-# 3. Instalar dependências
-npm install
+```
+src/
+├── components/
+│   ├── layout/         # Navbar, Footer, Container, Loading, Message, LinkButton
+│   ├── pages/          # Home, Projects, Project, NewProject
+│   ├── project/        # ProjectCard, ProjectForm
+│   └── service/        # ServiceCard, ServiceForm
+├── img/                # Logo and images
+├── App.js
+└── index.css           # Global CSS variables (design tokens)
 ```
 
-### Iniciar a aplicação
+---
 
-Precisas de dois terminais em simultâneo:
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) installed
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
 
 ```bash
-# Terminal 1 — Backend (json-server)
+# 1. Clone the repository
+git clone https://github.com/your-username/costs-manager.git
+
+# 2. Navigate to the project folder
+cd costs-manager/costs
+
+# 3. Install dependencies
+npm install
+
+# 4. In one terminal, start the backend (JSON Server on port 5000)
 npm run backend
 
-# Terminal 2 — Frontend (React)
+# 5. In another terminal, start React (port 3000)
 npm start
 ```
 
-A aplicação estará disponível em `http://localhost:3000` e o backend em `http://localhost:5000`.
+Open in browser: **http://localhost:3000**
 
 ---
 
-## 📂 Estrutura do Projeto
+## 🎨 Design
 
+The project uses a **design token** system with global CSS variables for visual consistency:
+
+- Clean color palette with `#f7f8fc` background and white surfaces
+- Typography with **Inter** (body) and **Space Grotesk** (headings)
+- Rounded borders and soft shadows on cards
+- Category colors: pink (Infrastructure), green (Development), blue (Design), orange (Planning)
+
+---
+
+## 📌 Available Scripts
+
+```bash
+npm start        # Start React app in development mode
+npm run backend  # Start JSON Server (fake API) on port 5000
+npm run build    # Build for production
+npm test         # Run tests
 ```
-Project/
-├── public/
-├── src/
-│   ├── components/       # Componentes reutilizáveis (Navbar, Button, Input...)
-│   ├── pages/            # Páginas (Home, NewProject, ProjectDetails...)
-│   ├── App.js
-│   └── index.js
-├── costs/
-│   └── db.json           # Base de dados simulada (json-server)
-├── package.json
-└── README.md
-```
 
 ---
 
-## 📌 Roadmap
+## 🔧 Fixes & Improvements
 
-- [ ] Autenticação de utilizadores
-- [ ] Filtros e pesquisa de projetos
-- [ ] Gráficos de orçamento
-- [ ] Substituir json-server por backend real (Node.js + Express)
-- [ ] Deploy na Vercel / Railway
+- Fixed CSS conflict between `width: 24%` on the card and `display: grid` on the container
+- Responsive grid with **4 columns** on desktop, **2** on tablet and **1** on mobile
+- Removed duplicate `.cards_grid` declaration in CSS
 
 ---
 
-## 📄 Licença
+## 📄 License
 
-Este projeto é de uso livre para fins de estudo e aprendizagem.
+This project is under the MIT license. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-<div align="center">
-  Feito por <a href="https://github.com/JohannSarate">Johann Sarate</a>
-</div>
+<p align="center">Made with ❤️ and React</p>
